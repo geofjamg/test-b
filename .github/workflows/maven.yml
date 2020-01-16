@@ -1,0 +1,15 @@
+name: CI
+
+on:
+  repository_dispatch:
+    types: lib_updated
+
+jobs:
+  build:
+    name: Image
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Build docker
+        run: pwd
+
