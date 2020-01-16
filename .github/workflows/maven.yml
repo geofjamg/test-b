@@ -2,7 +2,7 @@ name: CI
 
 on:
   repository_dispatch:
-    types: lib_updated
+    types: toto
 
 jobs:
   build:
